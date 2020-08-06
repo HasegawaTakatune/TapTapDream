@@ -62,10 +62,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Character.cs" />
-    <Compile Include="Assets\Scripts\Enemy.cs" />
-    <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\TapPanel.cs" />
+    <Compile Include="Assets\Scripts\Battle\BattleManager.cs" />
+    <Compile Include="Assets\Scripts\Battle\BattlePanel.cs" />
+    <Compile Include="Assets\Scripts\Battle\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Battle\HitpointBar.cs" />
+    <Compile Include="Assets\Scripts\Battle\Tap.cs" />
+    <Compile Include="Assets\Scripts\Battle\TypeSlider.cs" />
+    <Compile Include="Assets\Scripts\Samples\Character.cs" />
+    <Compile Include="Assets\Scripts\Samples\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Samples\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Samples\TapPanel.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
