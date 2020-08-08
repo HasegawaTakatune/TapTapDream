@@ -12,7 +12,7 @@ namespace Battle
 
         private static Slider typeSlider = default;
 
-        private void Start()
+        private void Awake()
         {
             typeSlider = GetComponent<Slider>();
         }

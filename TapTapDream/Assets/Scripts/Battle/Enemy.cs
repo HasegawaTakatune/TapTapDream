@@ -6,15 +6,17 @@ using UnityEngine.UI;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] private Slider hitpoint = default;
+    [SerializeField] private Image image = default;
 
-    private float attackSpeed = 0;
+    public float bpm = 0;
+    public float power = 1;
 
-    public void Init(float hitpoint, float attackSpeed)
+    public void Init(float hitpoint, float bpm)
     {
         this.hitpoint.maxValue = hitpoint;
         this.hitpoint.value = hitpoint;
 
-        this.attackSpeed = attackSpeed;
+        this.bpm = bpm;
     }
 
     public void Damage(float value)
