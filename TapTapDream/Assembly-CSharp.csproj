@@ -64,14 +64,17 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Battle\BattleManager.cs" />
     <Compile Include="Assets\Scripts\Battle\BattlePanel.cs" />
+    <Compile Include="Assets\Scripts\Battle\BattleResult.cs" />
     <Compile Include="Assets\Scripts\Battle\Enemy.cs" />
     <Compile Include="Assets\Scripts\Battle\HitpointBar.cs" />
     <Compile Include="Assets\Scripts\Battle\Tap.cs" />
     <Compile Include="Assets\Scripts\Battle\TypeSlider.cs" />
+    <Compile Include="Assets\Scripts\Menu\MenuItems.cs" />
     <Compile Include="Assets\Scripts\Samples\Character.cs" />
     <Compile Include="Assets\Scripts\Samples\Enemy.cs" />
     <Compile Include="Assets\Scripts\Samples\GameManager.cs" />
     <Compile Include="Assets\Scripts\Samples\TapPanel.cs" />
+    <Compile Include="Assets\Scripts\Title\ShowIcons.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

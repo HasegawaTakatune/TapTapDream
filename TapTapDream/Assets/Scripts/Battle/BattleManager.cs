@@ -17,13 +17,19 @@ namespace Battle
         [SerializeField] private Color WoodColor = Color.green;
         [SerializeField] private Color CureColor = Color.magenta;
 
+        [SerializeField] private BattleResult battleResult = default;
         [SerializeField] private BattlePanel battlePanel = default;
         [SerializeField] private Tap[] taps;
 
         private static Enemy enemy = default;
         private static HitpointBar hitpointBar = default;
 
+        private float enmyHitpoint = 100.0f;
+        private float enmyBpm = 30.0f;
+        private Attribute enmyAttribute = Attribute.FIRE;
+
         private float hitpoint = 1000;
+        private int panelNum = 20;
         private float bpm = 120.0f;
         private float power = 1.0f;
 
@@ -31,13 +37,18 @@ namespace Battle
 
         private void Start()
         {
+            battleResult.HideResult();
+
             enemy = GameObject.Find("Enemy").GetComponent<Enemy>();
             hitpointBar = gameObject.transform.Find("HitpointBar").GetComponent<HitpointBar>();
 
-            enemy.Init(100, 30);
+            enemy.AddDeadCallback(Finish);
+            hitpointBar.AddDeadCallback(Finish);
 
-            hitpointBar.InitHitpoint(1000);
-            taps = battlePanel.SetPanels(20);
+            enemy.Init(enmyHitpoint, enmyBpm, enmyAttribute);
+
+            hitpointBar.InitHitpoint(hitpoint);
+            taps = battlePanel.SetPanels(panelNum);
 
             OnTypeSliderChanged();
 
@@ -88,7 +99,12 @@ namespace Battle
         public static void OnTapAction(bool playerAttack)
         {
             if (playerAttack)
-                enemy.Damage(1);
+            {
+                if (GetAttribute() != Attribute.CURE)
+                    enemy.Damage(1, GetAttribute());
+                else
+                    hitpointBar.Cure(1);
+            }
             else
                 hitpointBar.Damage(1);
         }
@@ -109,6 +125,14 @@ namespace Battle
 
             for (int i = 0; i < taps.Length; i++)
                 taps[i].SetTapColor(color);
+        }
+
+        public void Finish(string message)
+        {
+            battleResult.ShowResult(message);
+
+            enemy.RemoveDeadCallback(Finish);
+            hitpointBar.RemoveDeadCallback(Finish);
         }
     }
 
