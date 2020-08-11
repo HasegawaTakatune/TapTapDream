@@ -113,10 +113,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 771
-  m_MinSize: {x: 880, y: 492}
-  m_MaxSize: {x: 18003, y: 14042}
+  m_MinSize: {x: 881, y: 492}
+  m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 42
+  controlID: 103
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -136,8 +136,8 @@ MonoBehaviour:
     y: 0
     width: 342
     height: 771
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 125
+  controlID: 128
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -192,7 +192,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 221}
   m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 126
+  controlID: 129
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -212,8 +212,8 @@ MonoBehaviour:
     y: 0
     width: 312
     height: 392
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -238,8 +238,8 @@ MonoBehaviour:
     y: 0
     width: 368
     height: 392
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -424,7 +424,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 6cc3ffffb2daffffcadaffffccdaffff24dbffff3cdbffff2edcfffff6dcffff0eddffff00deffff3ee0ffff56e0ffff48e1ffff10f0ffff70fbffffc43500001e36000054360000b84400001245000048450000f8540000185500006c55000024560000
+      m_ExpandedIDs: 0abdffff52bdffffc0c9ffff0ccaffffc4d8ffff08d9ffffc2e1fffffce7ffff70fbffffc2350000d035000014360000363600005a36000084360000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -484,9 +484,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -3.9895263, y: 3.7662458, z: -0.64521235}
+    m_Target: {x: 666.9956, y: 896.7129, z: -59.289}
     speed: 2
-    m_Value: {x: -3.9895263, y: 3.7662458, z: -0.64521235}
+    m_Value: {x: 666.9956, y: 896.7129, z: -59.289}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -532,13 +532,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.020644326, y: -0.06594232, z: -0.0013644351, w: 0.99761045}
+    m_Target: {x: 0.055769734, y: 0.01946421, z: -0.0010872319, w: 0.9982547}
     speed: 2
-    m_Value: {x: -0.020644294, y: -0.06594221, z: -0.001364433, w: 0.9976089}
+    m_Value: {x: 0.05576966, y: 0.019464184, z: -0.0010872305, w: 0.9982534}
   m_Size:
-    m_Target: 27.463923
+    m_Target: 633.425
     speed: 2
-    m_Value: 27.463923
+    m_Value: 633.425
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -602,20 +602,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Menu
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 71
   m_LastFolders:
-  - Assets/Scripts/Menu
+  - Assets/Prefabs
   m_LastFoldersGridSize: 71
   m_LastProjectPath: C:\Users\0ta52\Documents\TapTapDream\TapTapDream
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 68670000
-    m_LastClickedID: 26472
-    m_ExpandedIDs: 0000000080370000b237000000ca9a3b
+    m_SelectedIDs: 5c380000
+    m_LastClickedID: 14428
+    m_ExpandedIDs: 000000002c3800002e38000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -643,7 +643,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000080370000
+    m_ExpandedIDs: 000000002c3800002e380000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -817,7 +817,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -15508
+  m_LastSelectedObjectID: 14100
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
