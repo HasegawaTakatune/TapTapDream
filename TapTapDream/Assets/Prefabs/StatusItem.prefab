@@ -196,7 +196,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u4F53\u529B"
+  m_Text: AAA
 --- !u!1 &7586707034720549195
 GameObject:
   m_ObjectHideFlags: 0
@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 7586707034720549192}
   - component: {fileID: 7586707034720549193}
   m_Layer: 5
-  m_Name: HealthPanel
+  m_Name: ParamPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -438,6 +438,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7586707035603364210}
+  - component: {fileID: 8289356861640186219}
   m_Layer: 5
   m_Name: StatusItem
   m_TagString: Untagged
@@ -467,6 +468,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 300}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8289356861640186219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7586707035603364211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10b26caa1e837474d99ecd03eb01fda3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: 
 --- !u!1 &7586707035661588484
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,4 +677,6 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 100
+  m_Text: '0
+
+'

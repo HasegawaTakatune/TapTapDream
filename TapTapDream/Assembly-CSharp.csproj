@@ -69,7 +69,9 @@
     <Compile Include="Assets\Scripts\Battle\HitpointBar.cs" />
     <Compile Include="Assets\Scripts\Battle\Tap.cs" />
     <Compile Include="Assets\Scripts\Battle\TypeSlider.cs" />
+    <Compile Include="Assets\Scripts\Menu\Configuration.cs" />
     <Compile Include="Assets\Scripts\Menu\MenuItems.cs" />
+    <Compile Include="Assets\Scripts\Menu\StatusItem.cs" />
     <Compile Include="Assets\Scripts\Samples\Character.cs" />
     <Compile Include="Assets\Scripts\Samples\Enemy.cs" />
     <Compile Include="Assets\Scripts\Samples\GameManager.cs" />
