@@ -3,18 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BattleResult : MonoBehaviour
+namespace Battle
 {
-    [SerializeField] private Text result = default;
-
-    public void ShowResult(string message)
+    public class BattleResult : MonoBehaviour
     {
-        gameObject.SetActive(true);
-        result.text = message;
-    }
+        [SerializeField] private Text result = default;
 
-    public void HideResult()
-    {
-        gameObject.SetActive(false);
+        public void ShowResult(string message)
+        {
+            gameObject.SetActive(true);
+            result.text = message;
+        }
+
+        public void HideResult()
+        {
+            gameObject.SetActive(false);
+        }
     }
 }

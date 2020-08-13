@@ -3,58 +3,62 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Configuration : MonoBehaviour
+namespace Menu
 {
-    private GameObject ConfigPanel = default;
-    private GameObject CreditPanel = default;
-
-    private Slider AudioSlider = default;
-    private Slider SESlider = default;
-
-    void Start()
+    public class Configuration : MonoBehaviour
     {
-        Transform trns = transform.Find("ConfigPanel");
-        AudioSlider = trns.Find("AudioSlider").GetComponent<Slider>();
-        SESlider = trns.Find("SESlider").GetComponent<Slider>();
+        private GameObject ConfigPanel = default;
+        private GameObject CreditPanel = default;
 
-        Button CreditBtn = trns.Find("CreditButton").GetComponent<Button>();
-        CreditBtn.onClick.AddListener(OnClickCreditButton);
+        private Slider AudioSlider = default;
+        private Slider SESlider = default;
 
-        Button ReturnBtn = trns.Find("ReturnButton").GetComponent<Button>();
-        ReturnBtn.onClick.AddListener(OnClickReturnButton);
+        void Start()
+        {
+            ConfigPanel = transform.Find("ConfigPanel").gameObject;
+            CreditPanel = transform.Find("CreditPanel").gameObject;
 
-        Button CloseBtn = transform.Find("CloseButton").GetComponent<Button>();
-        CloseBtn.onClick.AddListener(OnClickCloseButton);
-    }
+            Button backgroundBtn = GameObject.Find("Background").GetComponent<Button>();
+            backgroundBtn.onClick.AddListener(OnClickBackgroundPanel);
 
-    void Update()
-    {
+            Transform trns = transform.Find("ConfigPanel");
+            AudioSlider = trns.Find("AudioSlider").GetComponent<Slider>();
+            SESlider = trns.Find("SESlider").GetComponent<Slider>();
 
-    }
+            Button CreditBtn = trns.Find("CreditButton").GetComponent<Button>();
+            CreditBtn.onClick.AddListener(OnClickCreditButton);
 
-    public void OnClickBackgroundPanel()
-    {
-        ConfigPanel.SetActive(true);
-        CreditPanel.SetActive(false);
-        gameObject.SetActive(false);
-    }
+            Button ReturnBtn = transform.Find("CreditPanel").Find("ReturnButton").GetComponent<Button>();
+            ReturnBtn.onClick.AddListener(OnClickReturnButton);
 
-    public void OnClickCreditButton()
-    {
-        ConfigPanel.SetActive(false);
-        CreditPanel.SetActive(true);
-    }
+            Button CloseBtn = transform.Find("CloseButton").GetComponent<Button>();
+            CloseBtn.onClick.AddListener(OnClickCloseButton);
+        }
 
-    public void OnClickReturnButton()
-    {
-        ConfigPanel.SetActive(true);
-        CreditPanel.SetActive(false);
-    }
+        public void OnClickBackgroundPanel()
+        {
+            ConfigPanel.SetActive(true);
+            CreditPanel.SetActive(false);
+            gameObject.SetActive(false);
+        }
 
-    public void OnClickCloseButton()
-    {
-        ConfigPanel.SetActive(true);
-        CreditPanel.SetActive(false);
-        gameObject.SetActive(false);
+        public void OnClickCreditButton()
+        {
+            ConfigPanel.SetActive(false);
+            CreditPanel.SetActive(true);
+        }
+
+        public void OnClickReturnButton()
+        {
+            ConfigPanel.SetActive(true);
+            CreditPanel.SetActive(false);
+        }
+
+        public void OnClickCloseButton()
+        {
+            ConfigPanel.SetActive(true);
+            CreditPanel.SetActive(false);
+            gameObject.SetActive(false);
+        }
     }
 }
